@@ -136,7 +136,7 @@
         </nav>
         <!--// End Navbar -->
     </header>     
-    <section id="Home" style="background-image:url('../India.png');" data-pg-name="Home" class="content-1-1 content-block bg-image-cover min-height-800px pad90">
+    <section id="Home" style="background-image:url('images/India.png');" data-pg-name="Home" class="content-1-1 content-block bg-image-cover min-height-800px pad90">
         <div class="row text-center fa-bold pad90 pad-bottom90 clouds" id="Greeting">
             <h1><b>Technical REPORT</b></h1>
             <p class="text-center white" style="padding-left: 50px; padding-right: 50px;">This website is designed for the SOEE 5920 Computer Project, aiming to present the technical information of the main research project of <b><span>Influence of the Boreal Summer Intraseasonal Oscillation on Monsoon Rainfall and Soil Moisture over the Western Ghats, India.</span></b></p>
@@ -158,17 +158,20 @@
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <p class="lead">Bringing abundant precipitation, the India summer monsoon
 plays a criticial role in the agriculture and hydroelectric power industry for
-the Indian subcontinent, but it is also highly associated with the occurrence
+the Indian subcontinent, but it is also strongly linked with the occurrence
 of flooding, drought and rain-induced landslides by influencing soil moisture (Shrivastava et al., 2017a). Due
 to its roles in social-economic activities and extreme hydro-climatic hazards, understanding the monsoon rainfall and its
 relationship with soil moisture is of great importance.</p>
                 </div>
-                <div class="col-md-6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <img width="450" src="images/Monsoon-rainfall.jpg">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="images/Monsoon-rainfall.jpg" width="550"/>
                 </div>
             </div>
             <div class="row grid">
-                <p class="lead text-justify">Modulated by the Boreal Summer Intraseasonal Oscillation (BSISO), the summer monsoon season (June to September, JJAS) over the India subcontinent is not characterized by a constant rainfall but by the alternate wet (active) and dry (break) spells lasting for two to three weeks (Webster et al., 1998). However, the impacts of BSISO on rainfall variability and soil moisture response over the Western Ghats, the mountain range along western coast of the India, still remains limited. With the help of the most recent data from two flux towers (Figure 1) on Western Ghats, there is a good opportunity to fill this research gap.&nbsp;</p>
+                <p class="lead text-justify">Modulated by the Boreal Summer Intraseasonal Oscillation (BSISO), the summer monsoon season (June to September, JJAS) over the India subcontinent is not characterized by a constant rainfall but by the alternate wet (active) and dry (break) spells lasting for two to three weeks (Webster et al., 1998). Of all the regions over India, Western Ghats, the mountain range along western coast of the India, receives the largest amount of
+rainfall (~3000 mm) in summer monsoon season as a result of the topographic
+response to the sustaining southwesterly monsoon flow (Romatschke
+and Jr., 2011). However, the impact of BSISO activity on rainfall characteristics and soil moisture response over the Western Ghats still remains limited. With the help of the most recent data from two flux towers (Figure 1) on Western Ghats, there is a good opportunity to fill this research gap.&nbsp;</p>
                 <p class="lead text-justify"><b>Aim: </b>The research project aims to investigate how BSISO influences the rainfall variability and soil moisture response during summer monsoon seasons&nbsp; from 2016 to 2018 over the Western Ghats, India.</p>
                 <img src="images/Flux_tower_site2.png" width="400">
                 <p>Figure 1. Location of flux towers at Dharwad and Berambadi with lines showing the monsoon onset (Credit: Andrew Turner).</p>
@@ -200,7 +203,7 @@ relationship with soil moisture is of great importance.</p>
                         <p>Correlation analysis</p> 
                     </div>
                 </div>
-                <p class="text-justify lead">The technical part of my research project mainly involves data analysis and visualization, all of which are carried out with Python programming. This website focuses on the technical information for achieving objective 1 and 2. The scripits associated with data processing and website development are also hosted in Github. The homepage can also be accessed via #############.</p>
+                <p class="text-justify lead">The technical part of my research project mainly involves data analysis and visualization, all of which are carried out with Python programming. This website focuses on the technical information for achieving objective 1 and 2. The scripits associated with data processing and website development are hosted both by homepages.see system and Github. The homepage can be accessed via #############&nbsp; &nbsp;or XXXXXXXXXXXXXXXXXX.</p>
             </div>
             <!-- /.row -->
         </div>
@@ -441,7 +444,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                             <td>To carry out spatial analysis of rainfall anomaly during each BSISO phase (June - September in 1999 - 2018)</td>
                             <td>
                                 <a href="https://drive.google.com/open?id=1GbkbIvR8lc4FGMKOmuHKv6KbxXgAHdKi">Download</a>
-                            </td>                                                          
+                            </td>                             
                         </tr>
                         <tr> 
                             <td>2</td> 
@@ -486,7 +489,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                 <h4><li>Rainfall_anomally_20yr.py</li></h4>
                 <p>The spatial rainfall anomalies during each BSISO phase was carried out with the data in&nbsp;<b><span>TRMM_3B42_V7_Daily&nbsp;</span></b>folder and <b>BSISO_25-90bpfil_pc_cdr_20yrs.txt</b>. The rainfall anomalies at each grid point are calculated by:</p>
                 <div class="row text-center" style="margin-left: 2px; margin-right: 2px;"> 
-                    <img src="images/rainfall_anomaly_equ.png" width="550" class="text-center">
+                    <img src="images/Rainfall_anomaly_equ.png" width="550" class="text-center">
                 </div>
                 <p>After getting the plots of rainfall anomaly during each BSISO phase, the animation in .gif format was created by <a href="https://gifmaker.me/">GIFMaker.me.</a></p>
                 <embed>
@@ -509,12 +512,11 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                 <li class="h4">Drydown.py</li>
                 <div class="row" style="margin-left: 1px; margin-right: 3px;">
                     <p class="text-justify">For running Drydown.py, in-situ soil moisture (<b>Dharwad_GapFilled.csv. /Berambadi_GapFilled.csv</b>) and IMERG rainfall estimates (<b>GPM_IMERG_WesternGhats_2016.npz</b>) are required. </p>
-                    <p class="text-justify">The first step is to extract the dry-down events from the entire study period. Referred to the criteria defined by Shellito et al. (2016), a dry-down event is defined during the period that starts after the accumulated rainfall in the previous 24 hours is greater than 5 mm, and stops once 2 mm or above of subsequent rain accumulates or when there is soil moisture increase. In this script, dry-down periods are firstly screened out automatically based on IMERG rainfall estimates, and then need to be mannually checked to ensure that there is no unexpected increase of soil moisture&nbsp; (e.g. may due to irrigation). After that, an exponential model will be employed to assess the timescale and magnitude of soil drying for each event of each site. The exponential decay function is shown below (Shellito et al., 2016):</p>
+                    <p class="text-justify">The first step is to extract the dry-down events from the entire study period. Referred to the criteria defined by Shellito et al. (2016), a dry-down event is defined during the period that starts after the accumulated rainfall in the previous 24 hours is greater than 5 mm, and stops once 2 mm or above of subsequent rain accumulates or when there is soil moisture increase. In this script, dry-down periods are firstly screened out automatically based on IMERG rainfall estimates, and then need to be mannually checked to ensure that there is no unexpected increase of soil moisture (e.g. may due to irrigation). After that, an exponential model will be employed to assess the timescale and magnitude of each dry-down event at each site. The exponential decay function is shown below (Shellito et al., 2016):</p>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-
-                    <img src="../Screenshot%202019-04-20%20at%2017.33.21.png" width="200">
-                    <p class="text-justify">where: θ – Soil moisture content at a certain depth (%); t – Time since the beginning of the dry-down; A – The magnitude of soil moisture drying (%); τ – The exponential time constant; θ_f – The final soil moisture content (%), which should be smaller than the lowest observed soil moisture during the dry-down event and equal or larger than the lowest soil moisture of the site.<br></p>
-                    <p class="text-justify">Only the exponential fits with coefficient of determination greater than 0.7 are selected for further analysis.</p>
+                    <img src="images/Exponential_decay_function.png" width="200">
+                    <p class="text-justify">where: θ – Soil moisture content at a certain depth (%); t – Time since the beginning of the dry-down; A – The magnitude of soil moisture drying (%); τ – The exponential time constant; θ_f – The final soil moisture content (%), which should be smaller than the lowest observed soil moisture during the dry-down event and equal to or higher than the lowest soil moisture of the site.<br></p>
+                    <p class="text-justify">Only the dry-downs with the coefficient of determination from exponential fitting greater than 0.7 are selected for further analysis.</p>
                 </div>
                 <embed>
                 <script src="https://gist.github.com/haichen6622/73ddf08dddb4e5515e48fab48fae8241.js"></script>
@@ -545,6 +547,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
             <p>Fletcher, J. K., Parker, D. J., Turner, A. G., Menon, A., Martin, G. M., Birch, C. E., Mitra, A. K., Mrudula, G., Hunt, K. M. R., Taylor, C. M., Houze, R. A., Brodzik, S. R. and Bhat, G. S. 2018. The dynamic and thermodynamic structure of the monsoon over southern India: New observations from the INCOMPASS IOP. Quarterly Journal of the Royal Meteorological Society. doi: 10.1002/qj.3439.</p>
             <p>Huffman, G. J., Stocker, E. F., Bolvin, D. T., Nelkin, E. J. and Tan, J. 2019. GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V06. Goddard Earth Sciences Data and Information Services Center (GES DISC). [Online]. [Accessed 1 April 2019]. Available from: 10.5067/GPM/IMERG/3B-HH/06</p>
             <p>International Pacific Research Center 2019. Historical ISO index (CDR OLR). International Pacific Research Center. [Online]. [Accessed 5 April 2019]. Available from: http://iprc.soest.hawaii.edu/users/kazuyosh/Bimodal_ISO.html</p>
+            <p>Romatschke, U. and Jr., R. A. H. 2011. Characteristics of Precipitating Convective Systems in the South Asian Monsoon. Journal of Hydrometeorology. 12(1), pp.3-26.</p>
             <p>Shellito, P. J., Small, E. E., Colliander, A., Bindlish, R., Cosh, M. H., Berg, A. A., Bosch, D. D., Caldwell, T. G., Goodrich, D. C., McNairn, H., Prueger, J. H., Starks, P. J., van der Velde, R. and Walker, J. P. 2016. SMAP soil moisture drying more rapid than observed in situ following rainfall events. Geophysical Research Letters. 43(15), pp.8068-8075.</p>
             <p>Shrivastava, S., Kar, S. C. and Sharma, A. R. 2017a. Intraseasonal Variability of Summer Monsoon Rainfall and Droughts over Central India. Pure and Applied Geophysics. 174(4), pp.1827-1844.</p>
             <p>Tropical Rainfall Measuring Mission (TRMM) 2011. TRMM (TMPA) Rainfall Estimate L3 3 hour 0.25 degree x 0.25 degree V7. Goddard Earth Sciences Data and Information Services Center (GES DISC). [Online]. [Accessed 10 March 2019]. Available from: 10.5067/TRMM/TMPA/3H/7</p>

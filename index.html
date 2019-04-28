@@ -136,7 +136,7 @@
         </nav>
         <!--// End Navbar -->
     </header>     
-    <section id="Home" style="background-image:url('../India.png');" data-pg-name="Home" class="content-1-1 content-block bg-image-cover min-height-800px pad90">
+    <section id="Home" style="background-image:url('images/India.png');" data-pg-name="Home" class="content-1-1 content-block bg-image-cover min-height-800px pad90">
         <div class="row text-center fa-bold pad90 pad-bottom90 clouds" id="Greeting">
             <h1><b>Technical REPORT</b></h1>
             <p class="text-center white" style="padding-left: 50px; padding-right: 50px;">This website is designed for the SOEE 5920 Computer Project, aiming to present the technical information of the main research project of <b><span>Influence of the Boreal Summer Intraseasonal Oscillation on Monsoon Rainfall and Soil Moisture over the Western Ghats, India.</span></b></p>
@@ -444,7 +444,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                             <td>To carry out spatial analysis of rainfall anomaly during each BSISO phase (June - September in 1999 - 2018)</td>
                             <td>
                                 <a href="https://drive.google.com/open?id=1GbkbIvR8lc4FGMKOmuHKv6KbxXgAHdKi">Download</a>
-                            </td>                                                          
+                            </td>                             
                         </tr>
                         <tr> 
                             <td>2</td> 
@@ -489,7 +489,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                 <h4><li>Rainfall_anomally_20yr.py</li></h4>
                 <p>The spatial rainfall anomalies during each BSISO phase was carried out with the data in&nbsp;<b><span>TRMM_3B42_V7_Daily&nbsp;</span></b>folder and <b>BSISO_25-90bpfil_pc_cdr_20yrs.txt</b>. The rainfall anomalies at each grid point are calculated by:</p>
                 <div class="row text-center" style="margin-left: 2px; margin-right: 2px;"> 
-                    <img src="images/rainfall_anomaly_equ.png" width="550" class="text-center">
+                    <img src="images/Rainfall_anomaly_equ.png" width="550" class="text-center">
                 </div>
                 <p>After getting the plots of rainfall anomaly during each BSISO phase, the animation in .gif format was created by <a href="https://gifmaker.me/">GIFMaker.me.</a></p>
                 <embed>
@@ -514,8 +514,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                     <p class="text-justify">For running Drydown.py, in-situ soil moisture (<b>Dharwad_GapFilled.csv. /Berambadi_GapFilled.csv</b>) and IMERG rainfall estimates (<b>GPM_IMERG_WesternGhats_2016.npz</b>) are required. </p>
                     <p class="text-justify">The first step is to extract the dry-down events from the entire study period. Referred to the criteria defined by Shellito et al. (2016), a dry-down event is defined during the period that starts after the accumulated rainfall in the previous 24 hours is greater than 5 mm, and stops once 2 mm or above of subsequent rain accumulates or when there is soil moisture increase. In this script, dry-down periods are firstly screened out automatically based on IMERG rainfall estimates, and then need to be mannually checked to ensure that there is no unexpected increase of soil moisture (e.g. may due to irrigation). After that, an exponential model will be employed to assess the timescale and magnitude of each dry-down event at each site. The exponential decay function is shown below (Shellito et al., 2016):</p>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-
-                    <img src="../Screenshot%202019-04-20%20at%2017.33.21.png" width="200">
+                    <img src="images/Exponential_decay_function.png" width="200">
                     <p class="text-justify">where: θ – Soil moisture content at a certain depth (%); t – Time since the beginning of the dry-down; A – The magnitude of soil moisture drying (%); τ – The exponential time constant; θ_f – The final soil moisture content (%), which should be smaller than the lowest observed soil moisture during the dry-down event and equal to or higher than the lowest soil moisture of the site.<br></p>
                     <p class="text-justify">Only the dry-downs with the coefficient of determination from exponential fitting greater than 0.7 are selected for further analysis.</p>
                 </div>
