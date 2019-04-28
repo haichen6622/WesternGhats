@@ -163,8 +163,8 @@ of flooding, drought and rain-induced landslides by influencing soil moisture (S
 to its roles in social-economic activities and extreme hydro-climatic hazards, understanding the monsoon rainfall and its
 relationship with soil moisture is of great importance.</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="images/Monsoon-rainfall.jpg" width="550"/>
+                <div class="col-md-6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <img width="450" src="images/Monsoon-rainfall.jpg">
                 </div>
             </div>
             <div class="row grid">
@@ -203,7 +203,7 @@ and Jr., 2011). However, the impact of BSISO activity on rainfall characteristic
                         <p>Correlation analysis</p> 
                     </div>
                 </div>
-                <p class="text-justify lead">The technical part of my research project mainly involves data analysis and visualization, all of which are carried out with Python programming. This website focuses on the technical information for achieving objective 1 and 2. The scripits associated with data processing and website development are hosted both by homepages.see system and Github. The homepage can be accessed via #############&nbsp; &nbsp;or XXXXXXXXXXXXXXXXXX.</p>
+                <p class="text-justify lead">The technical part of my research project mainly involves data analysis and visualization, all of which are carried out with Python programming. This website focuses on the technical information for achieving objective 1 and 2. The scripits associated with data processing and website development are also hosted in Github. The homepage can also be accessed via #############.</p>
             </div>
             <!-- /.row -->
         </div>
@@ -512,12 +512,12 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                 <li class="h4">Drydown.py</li>
                 <div class="row" style="margin-left: 1px; margin-right: 3px;">
                     <p class="text-justify">For running Drydown.py, in-situ soil moisture (<b>Dharwad_GapFilled.csv. /Berambadi_GapFilled.csv</b>) and IMERG rainfall estimates (<b>GPM_IMERG_WesternGhats_2016.npz</b>) are required. </p>
-                    <p class="text-justify">The first step is to extract the dry-down events from the entire study period. Referred to the criteria defined by Shellito et al. (2016), a dry-down event is defined during the period that starts after the accumulated rainfall in the previous 24 hours is greater than 5 mm, and stops once 2 mm or above of subsequent rain accumulates or when there is soil moisture increase. In this script, dry-down periods are firstly screened out automatically based on IMERG rainfall estimates, and then need to be mannually checked to ensure that there is no unexpected increase of soil moisture (e.g. may due to irrigation). After that, an exponential model will be employed to assess the timescale and magnitude of each dry-down event at each site. The exponential decay function is shown below (Shellito et al., 2016):</p>
+                    <p class="text-justify">The first step is to extract the dry-down events from the entire study period. Referred to the criteria defined by Shellito et al. (2016), a dry-down event is defined during the period that starts after the accumulated rainfall in the previous 24 hours is greater than 5 mm, and stops once 2 mm or above of subsequent rain accumulates or when there is soil moisture increase. In this script, dry-down periods are firstly screened out automatically based on IMERG rainfall estimates, and then need to be mannually checked to ensure that there is no unexpected increase of soil moisture&nbsp; (e.g. may due to irrigation). After that, an exponential model will be employed to assess the timescale and magnitude of soil drying for each event of each site. The exponential decay function is shown below (Shellito et al., 2016):</p>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
 
                     <img src="../Screenshot%202019-04-20%20at%2017.33.21.png" width="200">
-                    <p class="text-justify">where: θ – Soil moisture content at a certain depth (%); t – Time since the beginning of the dry-down; A – The magnitude of soil moisture drying (%); τ – The exponential time constant; θ_f – The final soil moisture content (%), which should be smaller than the lowest observed soil moisture during the dry-down event and equal to or higher than the lowest soil moisture of the site.<br></p>
-                    <p class="text-justify">Only the dry-downs with the coefficient of determination from exponential fitting greater than 0.7 are selected for further analysis.</p>
+                    <p class="text-justify">where: θ – Soil moisture content at a certain depth (%); t – Time since the beginning of the dry-down; A – The magnitude of soil moisture drying (%); τ – The exponential time constant; θ_f – The final soil moisture content (%), which should be smaller than the lowest observed soil moisture during the dry-down event and equal or larger than the lowest soil moisture of the site.<br></p>
+                    <p class="text-justify">Only the exponential fits with coefficient of determination greater than 0.7 are selected for further analysis.</p>
                 </div>
                 <embed>
                 <script src="https://gist.github.com/haichen6622/73ddf08dddb4e5515e48fab48fae8241.js"></script>

@@ -777,6 +777,13 @@ p {
     color: #515157;
 }
 
+.lead {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
 small,
 .small {
     font-size: 80%;

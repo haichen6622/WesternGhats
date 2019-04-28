@@ -57,6 +57,7 @@ Version: 1.0
 }
 
 #header-1 .main-nav .navbar-nav > li.active a {
+    color: #3498DB;
     background: none;
 }
 
@@ -750,7 +751,7 @@ Version: 1.0
 /*----------------------------------------------------*/
 .content-1-3 {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 154px;
 }
 
 .content-1-3 p {
