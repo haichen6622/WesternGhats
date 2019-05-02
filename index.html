@@ -167,7 +167,7 @@ and Jr., 2011). However, the impact of BSISO activity on rainfall characteristic
                     <a href="#tab2" role="tab" data-toggle="tab">Daily Average</a>
                 </li>
                 <li>
-                    <a href="#tab3" role="tab" data-toggle="tab">Diuranl Cycle</a>
+                    <a href="#tab3" role="tab" data-toggle="tab">Diurnal Cycle</a>
                 </li>
                 <li>
                     <a href="#tab4" role="tab" data-toggle="tab">Drydowns</a>
@@ -414,7 +414,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                             <td>Drydown.py</td> 
                             <td>To extract dry-down events and do exponential fitting for Dharwad and Barembadi</td> 
                             <td>
-                                <a href="http://homepages.see.leeds.ac.uk/~ee18hz/Datasets/" download>Download</a>
+                                <a href="http://homepages.see.leeds.ac.uk/~ee18hz/Scripts/Drydown.py" download>Download</a>
                             </td>                             
                         </tr>
                     </tbody>
@@ -439,7 +439,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
                 <div class="row text-center" style="margin-left: 2px; margin-right: 2px;"> 
                     <img src="images/Rainfall_anomaly_equ.png" width="550" class="text-center">
                 </div>
-                <p>This script was modified from the lecture materials of Visualising the Madden-Julian Oscillation (Birch, 2018). After getting the plots of rainfall anomaly during each BSISO phase, the animation in .gif format was created by <a href="https://gifmaker.me/">GIFMaker.me.</a></p>
+                <p>This script was modified from the lecture materials of Visualising the Madden-Julian Oscillation in SOEE5710M Advanced Data Analysis and Visualisation for Environmental Applications (Birch, 2018). After getting the plots of rainfall anomaly during each BSISO phase, the animation in .gif format was created by <a href="https://gifmaker.me/">GIFMaker.me.</a></p>
                 <embed>
                 <script src="https://gist.github.com/haichen6622/0d5ac58afa11740b91707a9991849bf8.js"></script>
             </div>
@@ -458,7 +458,7 @@ Retrievals for Global Precipitation Measurement (IMERG) rainfall dataset as well
             <div class="row" data-pg-name="Drydown">
                 <li class="h4">Drydown.py</li>
                 <div class="row" style="margin-left: 1px; margin-right: 3px;">
-                    <p class="text-justify">For running Drydown.py, in-situ soil moisture (<b>Dharwad_GapFilled.csv. /Berambadi_GapFilled.csv</b>) and IMERG rainfall estimates (<b>GPM_IMERG_WesternGhats_2016.npz</b>) are required. </p>
+                    <p class="text-justify">For running Drydown.py, in-situ soil moisture (<b>Dharwad_GapFilled.txt. or Berambadi_GapFilled.txt</b>) and IMERG rainfall estimates (<b>GPM_IMERG_WesternGhats_2016.npz</b>) are required. </p>
                     <p class="text-justify">The first step is to extract the dry-down events from the entire study period. Combining the criteria defined by Shellito et al. (2016) and Salvia (2017), a dry-down event starts after the accumulated rainfall in the previous 24 hours greater than 5 mm and stops once 2 mm or above of subsequent rain accumulates or ends when there is soil moisture increase. In this script, dry-down events are firstly screened out automatically based on the IMERG rainfall estimates and then need to be manually checked to ensure that there is no unexpected increase in soil moisture (e.g. due to irrigation). After that, an exponential model will be employed to assess the timescale and magnitude of each dry-down event at the indicated site. The exponential decay function is shown below (Shellito et al., 2016):</p>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                     <img src="images/Exponential_decay_function.png" width="200">
